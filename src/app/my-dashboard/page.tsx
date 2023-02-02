@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { ListProducts } from "./list-products";
+import { Counter } from "./counter";
 
 const MyDashboardPage = () => {
   return (
@@ -9,6 +10,7 @@ const MyDashboardPage = () => {
         {/* @ts-expect-error Server Component */}
         <ListProducts/>
         </Suspense>
+        <Counter/>
     </div>
   );
 };	
